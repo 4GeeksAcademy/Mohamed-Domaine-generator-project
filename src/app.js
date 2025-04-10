@@ -10,15 +10,17 @@ const extensions = [".com", ".net", ".io", ".dev"];
 window.onload = function() {
 
 function generateDomaine (){
-  const domains =[];
+  let domains =[];
   for(let pronounsIndex =0; pronounsIndex<pronouns.length; pronounsIndex++){
-   console.log(pronouns[pronounsIndex]);
+  // console.log(pronouns[pronounsIndex]);
    for(let adjectiveIndex =0; adjectiveIndex<adjectives.length; adjectiveIndex++){
-    console.log(adjectives[adjectiveIndex]);
+    // console.log(adjectives[adjectiveIndex]);
     for(let nounIndex =0; nounIndex<nouns.length; nounIndex++){
-      console.log(nouns[nounIndex]);
+      // console.log(nouns[nounIndex]);
       for(let extensionIndex =0; extensionIndex<extensions.length; extensionIndex++){
-       domains.push`${pronounsIndex},${adjectiveIndex},${nounIndex},${extensionIndex}`
+       const result = `${pronouns[pronounsIndex]} ${adjectives[adjectiveIndex]} ${nouns[nounIndex]} ${extensions[extensionIndex]}`
+       domains.push(result);
+       console.log(result)
       }
     
   }
@@ -28,11 +30,13 @@ function generateDomaine (){
 return domains
 }
 
-const element = document.getElementById("root");
+// const element = document.getElementById("root");
+// element.textContent = generateDomaine();
 
-element.textContent = generateDomaine;
+console.log(generateDomaine());
 
-generateDomaine();
+
+
 }
 
 
