@@ -18,14 +18,19 @@ function generateDomaine (){
     for(let nounIndex =0; nounIndex<nouns.length; nounIndex++){
       console.log(nouns[nounIndex]);
       for(let extensionIndex =0; extensionIndex<extensions.length; extensionIndex++){
-        domains.push(`${pronounsIndex},${adjectiveIndex},${nounIndex},${extensionIndex}`)
+       domains.push`${pronounsIndex},${adjectiveIndex},${nounIndex},${extensionIndex}`
       }
     
   }
 }
+ 
 }
 return domains
 }
+
+const element = document.getElementById("root");
+
+element.textContent = generateDomaine;
 
 generateDomaine();
 }
