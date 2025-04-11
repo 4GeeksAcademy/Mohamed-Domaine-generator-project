@@ -8,9 +8,9 @@ const extensions = [".com", ".net", ".io", ".dev"];
 
 
 window.onload = function() {
-  let domains =[];
+  var domains =[];
 function generateDomaine (){
-  
+  var domains =[];
   for(let pronounsIndex =0; pronounsIndex<pronouns.length; pronounsIndex++){
 
    for(let adjectiveIndex =0; adjectiveIndex<adjectives.length; adjectiveIndex++){
@@ -18,9 +18,9 @@ function generateDomaine (){
     for(let nounIndex =0; nounIndex<nouns.length; nounIndex++){
       // console.log(nouns[nounIndex]);
       for(let extensionIndex =0; extensionIndex<extensions.length; extensionIndex++){
-       const template = `${pronouns[pronounsIndex]} ${adjectives[adjectiveIndex]} ${nouns[nounIndex]} ${extensions[extensionIndex]}`
-       domains.push(template);
-       console.log(template)
+       domains.push(`${pronouns[pronounsIndex]} ${adjectives[adjectiveIndex]} ${nouns[nounIndex]} ${extensions[extensionIndex]}`)
+       
+       
       }
     
   }
@@ -28,9 +28,10 @@ function generateDomaine (){
  
 }
 return domains
+
+
+
 }
-
-
 
 const cardContainer = document.getElementById("card-container");
 
@@ -50,12 +51,18 @@ domains.forEach(domain => {
 
   // Append the card to the container
   cardContainer.appendChild(card);
+  
 });
 
+generateDomaine()
 
 
 
 
+
+
+
+console.log(domains)
 }
 
 
