@@ -31,81 +31,45 @@ return domains
 
 generateDomaine()
 
-// const cardContainer = document.getElementById("card-container");
+const cardContainer = document.getElementById("card-container");
 
-// domains.forEach(domain => {
-//   // Create a card element
-//   const card = document.createElement("div");
-//  
+domains.forEach(domain => {
+  // Create a card element
+  const card = document.createElement("div");
+ 
 
-//   // Add card content
-//   card.innerHTML = `
-//     <div class="card-body">
-//       <h5 class="card-title">${domain}</h5>
-//       <p class="card-text">This is a generated domain name.</p>
-//     </div>
-//   `;
+  // Add card content
+  card.innerHTML = `
+    <div class="card-body">
+      <h6 class="card-title">${domain}</h6>
+      
+    </div>
+  `;
 
-//   // Append the card to the container
-//   cardContainer.appendChild(card);
+  // Append the card to the container
+  cardContainer.appendChild(card);
   
-// });
+});
 
-// console.log(domains)
-// }
+console.log(domains)
+}
 
 
 
-// function random_bg_color() {
+// function randomBgColor() {
 //         var x = Math. floor(Math. random() * 256);
 //         var y = Math. floor(Math. random() * 256);
 //         var z = Math. floor(Math. random() * 256);
 //         let bgColor = "rgb(" + x + "," + y + "," + z + ")";
-//         console. log(bgColor);
-//         document. body. style. background = bgColor;
+//         console.log(bgColor);
+//         document.body.style.background = bgColor;
 //       }
 
 
 
 
+//   for (let i = 0; i < domains.length; i += 4) {}
 
-
-  // Get the card container
-  const cardContainer = document.getElementById("card-container");
-
-  // Iterate over the domains array and group them into rows of 4
-  for (let i = 0; i < domains.length; i += 4) {
-    // Create a row
-    const row = document.createElement("div");
-    row.className = "row";
-
-    // Add up to 4 cards in the row
-    for (let j = i; j < i + 4 && j < domains.length; j++) {
-      // Create a card element
-      const card = document.createElement("div");
-      card.className = "card";
-      
-      // Use Bootstrap classes for layout
-      
-
-      
-      // Add card content
-      card.innerHTML = `
-        <div class="card-body">
-          <h6 class="card-title">${domains[j]}</h6>
-        </div>
-      `;
-
-      // Append the card to the row
-      row.appendChild(card);
-    }
-
-    // Append the row to the card container
-    cardContainer.appendChild(row);
-  }
-
-  console.log(domains); // Check the generated domains in the console
-};
 
 
 

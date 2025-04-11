@@ -16,7 +16,7 @@ body{
     
 } */
 
-.card {
+.card-body{
     border: 1px solid #ddd;
     border-radius: 8px;
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
@@ -27,28 +27,11 @@ body{
    
   }
 
-#card-container{
+/* #card-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
    
     
-}
-h3{
-    
-    color: white;
-    margin-left: 10px;
-    
-}
-
-.header
-{
-    background-color: #143D60;
-    margin-top: 20px;
-    height: 40px;
-    width: 320px;
-    border-radius: 6px;
-
-
-}
+} */
