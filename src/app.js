@@ -92,7 +92,7 @@ generateDomaine()
       // Add card content
       card.innerHTML = `
         <div class="card-body">
-          <h5 class="card-title">${domains[j]}</h5>
+          <h6 class="card-title">${domains[j]}</h6>
         </div>
       `;
 
