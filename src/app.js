@@ -54,6 +54,22 @@ generateDomaine()
 // console.log(domains)
 // }
 
+
+
+// function random_bg_color() {
+//         var x = Math. floor(Math. random() * 256);
+//         var y = Math. floor(Math. random() * 256);
+//         var z = Math. floor(Math. random() * 256);
+//         let bgColor = "rgb(" + x + "," + y + "," + z + ")";
+//         console. log(bgColor);
+//         document. body. style. background = bgColor;
+//       }
+
+
+
+
+
+
   // Get the card container
   const cardContainer = document.getElementById("card-container");
 
@@ -68,9 +84,11 @@ generateDomaine()
       // Create a card element
       const card = document.createElement("div");
       card.className = "card";
+      
       // Use Bootstrap classes for layout
       
 
+      
       // Add card content
       card.innerHTML = `
         <div class="card-body">
