@@ -36,8 +36,7 @@ generateDomaine()
 // domains.forEach(domain => {
 //   // Create a card element
 //   const card = document.createElement("div");
-//   card.className = "card m-2";
-//   card.style.width = "18rem";
+//  
 
 //   // Add card content
 //   card.innerHTML = `
@@ -52,17 +51,8 @@ generateDomaine()
   
 // });
 
-
-
-
-
-
-
-
-
 // console.log(domains)
 // }
-
 
   // Get the card container
   const cardContainer = document.getElementById("card-container");
@@ -77,8 +67,9 @@ generateDomaine()
     for (let j = i; j < i + 4 && j < domains.length; j++) {
       // Create a card element
       const card = document.createElement("div");
-      card.className = "card m-2 col-md-3"; // Use Bootstrap classes for layout
-      card.style.width = "18rem";
+      card.className = "card";
+      // Use Bootstrap classes for layout
+      
 
       // Add card content
       card.innerHTML = `
