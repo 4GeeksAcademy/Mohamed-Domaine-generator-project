@@ -4,7 +4,7 @@ body{
     background: white;
 }
 
-.excuse{
+/* .excuse{
     margin: 5px;
     background-color: #EC5228;
     width: 60%;
@@ -14,4 +14,10 @@ body{
     display: flex;
     flex-direction: column;
     
-}
+} */
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
