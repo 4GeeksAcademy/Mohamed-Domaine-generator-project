@@ -27,12 +27,7 @@ window.onload = function () {
   }
   generateDomaine()
 
-  // for(let i=0; i<domains.length; i=i+4){
-
-
-  // }
-
-
+  
   const cardContainer = document.getElementById("card-container");
 
   domains.forEach(domain => {
@@ -52,7 +47,6 @@ window.onload = function () {
 
   });
 
-  // console.log(domains)
 }
 
 
