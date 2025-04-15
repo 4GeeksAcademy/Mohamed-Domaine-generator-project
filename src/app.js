@@ -16,7 +16,7 @@ window.onload = function () {
       for (let adjectiveIndex = 0; adjectiveIndex < adjectives.length; adjectiveIndex++) {
         for (let nounIndex = 0; nounIndex < nouns.length; nounIndex++) {
           for (let extensionIndex = 0; extensionIndex < extensions.length; extensionIndex++) {
-            domains.push(`${pronouns[pronounsIndex]} ${adjectives[adjectiveIndex]} ${nouns[nounIndex]} ${extensions[extensionIndex]}`)
+            domains.push(`${pronouns[pronounsIndex]}${adjectives[adjectiveIndex]}${nouns[nounIndex]}${extensions[extensionIndex]}`)
 
 
           }
